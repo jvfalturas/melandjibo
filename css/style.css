@@ -5341,8 +5341,8 @@ h6 {
 /* Gift Icon */
 .fixed-gift-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 60px;
+  right: 40px;
   z-index: 1000;
   text-decoration: none;
   transition: transform 0.3s ease;
@@ -5589,7 +5589,37 @@ h6 {
   max-height: 100%;
 }
 
+@keyframes quickTilt {
+  0%   { transform: rotate(0deg); }
+  5%   { transform: rotate(-10deg); }
+  10%  { transform: rotate(10deg); }
+  15%  { transform: rotate(-10deg); }
+  20%  { transform: rotate(10deg); }
+  25%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
 
+.fixed-gift-icon img {
+  animation: quickTilt 2s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Optional: Adjust gallery styles */
+.gallery-carousel .slick-slide {
+  padding: 10px;
+}
+
+.gallery-carousel .slick-prev,
+.gallery-carousel .slick-next {
+  color: #000; /* Customize arrows */
+}
+
+.single_gallery img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  border-radius: 10px; 
+}
 
 
 /*# sourceMappingURL=style.css.map */
