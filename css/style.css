@@ -1371,12 +1371,13 @@ h3 {
 }
 
 .program_inner {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.30); /* white background with 85% opacity */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 57px 30px;
 }
+
 
 .program_content {
   flex-grow: 1;
@@ -1396,7 +1397,8 @@ h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  color: #9CAF88;
+  /* color: #9CAF88; */
+  color: #59733e;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1404,6 +1406,8 @@ h3 {
 .program_inner p {
   font-size: 16px;
   font-family: "Muli", sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 1px #000;
 }
 
 .dress-code-gallery {
@@ -1415,6 +1419,8 @@ h3 {
 }
 
 .dress-code-gallery img {
+  /* width: 200px;
+  height: 200px; */
   width: 60px;
   height: 60px;
   object-fit: cover;
@@ -5582,6 +5588,7 @@ h6 {
   max-width: 100%;
   max-height: 100%;
 }
+
 
 
 
