@@ -1410,6 +1410,7 @@ h3 {
   text-shadow: 0 0 1px #000;
 }
 
+/* Your existing gallery styles */
 .dress-code-gallery {
   display: flex;
   justify-content: center;
@@ -1418,15 +1419,43 @@ h3 {
   margin: 15px 0;
 }
 
+/* Small square images */
 .dress-code-gallery img {
-  /* width: 200px;
-  height: 200px; */
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #ddd;
 }
+
+/* Palette image container - NEW */
+.dress-code-gallery .palette-container {
+  flex-basis: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Palette image - aspect ratio fix */
+.dress-code-gallery .palette-container img.palette {
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: 200px; /* Adjust as needed */
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .dress-code-gallery .palette-container img.palette {
+    max-height: 300px; /* Smaller on mobile */
+  }
+}
+
 
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
