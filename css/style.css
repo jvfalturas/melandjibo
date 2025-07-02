@@ -1051,13 +1051,63 @@ h3 {
   }
 }
 
+
+
+
+
+
+
+
+
+/* ====================== gwaps ==================== */
+
+/* ===== ADD THESE NEW RULES ===== */
+/* Logo container adjustments */
+.slider_text.text-center > .text-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo image scaling */
+.slider_text.text-center img {
+  max-width: 60%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform: rotate(-45deg); /* Matches parent rotation */
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .slider_text.text-center img {
+    filter: brightness(0) invert(1);
+    padding-top: 30px;
+    padding-left: 50px;
+    max-width: 160%;
+    max-height: 160%;
+    transform: rotate(0deg); /* Aligns with mobile rotation reset */
+  }
+}
+
+
+
+
+
+
+
+
+
 /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #9CAF88;
+  background: #6b7461;
   padding: 126px 55px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
