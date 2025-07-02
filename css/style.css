@@ -1011,7 +1011,7 @@ h3 {
 
 /* line 14, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner {
-  height: 800px;
+  height: 980px;
   position: relative;
   z-index: 8;
   position: relative;
@@ -1075,10 +1075,11 @@ h3 {
 .slider_text.text-center img {
   max-width: 60%;
   max-height: 60%;
+  filter: brightness(0) invert(1);
   width: auto;
   height: auto;
   object-fit: contain;
-  transform: rotate(-45deg); /* Matches parent rotation */
+  transform: rotate(0deg); /* Matches parent rotation */
 }
 
 /* Mobile adjustments */
@@ -1106,7 +1107,7 @@ h3 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(0deg);
   background: #6b7461;
   padding: 126px 55px;
   -webkit-border-radius: 50%;
