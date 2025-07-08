@@ -2016,6 +2016,14 @@ h3 {
   background-image: url(../img/invitation/inv2.jpg);
 }
 
+.inv3 {
+  background-image: url(../img/invitation/inv3.jpg);
+}
+
+.inv4 {
+  background-image: url(../img/invitation/inv4.jpg);
+}
+
 /* line 65, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
 .gallery_area {
   padding: 0 50px;
