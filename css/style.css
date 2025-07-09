@@ -1408,7 +1408,7 @@ h3 {
 }
 
 .program_details_area {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .single_program {
@@ -2024,43 +2024,20 @@ h3 {
   background-image: url(../img/invitation/inv4.jpg);
 }
 
-/* line 65, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
-.gallery_area {
-  padding: 0 50px;
-  padding-top: 90px;
-}
-
-@media (max-width: 767px) {
-  /* line 65, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
-  .gallery_area {
-    padding: 0;
-  }
-}
-
-/* line 71, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
-.gallery_area .single_gallery {
-  height: 720px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 80, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
-.gallery_area .grid-item {
-  overflow: hidden;
-  padding: 4px !important;
-}
-
-/* line 84, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
-.gallery_area a {
-  position: absolute;
-  left: 0;
-  top: 0;
+.single_gallery {
   width: 100%;
-  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
+
+.single_gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area {
