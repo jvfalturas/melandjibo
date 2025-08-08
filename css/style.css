@@ -1764,7 +1764,7 @@ h3 {
 }
 
 /* Scrollable only in desktop view */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .groom-message {
         max-height: 500px; /* adjust height to your layout */
         overflow-y: auto;
