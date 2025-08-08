@@ -1109,7 +1109,7 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
   background: #2C4239;
-  padding: 126px 55px;
+  padding: 56px 55px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1869,7 +1869,7 @@ h3 {
   background: #FFFAF2;
   padding: 30px;
   margin-bottom: 30px;
-  max-height: 700px; /* adjust height as needed */
+  max-height: 950px; /* adjust height as needed */
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 15px;
@@ -1920,6 +1920,28 @@ h3 {
 .love_story_area .weding_time_line .single_time_line:nth-child(4)::before {
   display: none;
 }
+
+/* Scrollable only in desktop view */
+@media (min-width: 992px) {
+    .groom-message {
+        max-height: 500px; /* adjust height to your layout */
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+
+    /* Optional custom scrollbar style */
+    .groom-message::-webkit-scrollbar {
+        width: 6px;
+    }
+    .groom-message::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 3px;
+    }
+    .groom-message::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+
 
 
 /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
