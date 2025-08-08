@@ -1052,7 +1052,7 @@ h3 {
 
 .slider_text.text-center img {
   width: 100%;
-  max-width: 600px;    /* Limit size on large screens */
+  max-width: 550px;    /* Limit size on large screens */
   aspect-ratio: 1 / 1; /* Keeps square shape */
   object-fit: cover;   /* Ensures image fills circle */
   border-radius: 50%;  /* Circle shape */
