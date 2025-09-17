@@ -914,30 +914,52 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-<script>
-  $('#clock').countdown('2025/09/20', function (event) {
-    if (event.type === "finish") {
-      // When countdown ends
-      $(this).html(
+    <script>
+    var weddingDateStr = '2025/09/17'; // target string
+    var weddingDate = new Date(weddingDateStr);
+    var today = new Date();
+
+    // For comparison (date-only)
+    var compareWedding = new Date(weddingDate);
+    var compareToday = new Date(today);
+    compareWedding.setHours(0,0,0,0);
+    compareToday.setHours(0,0,0,0);
+
+    if (compareToday.getTime() > compareWedding.getTime()) {
+        // After the wedding date
+        $('#clock').html(
         '<div class="countdown_wrap d-flex justify-content-center align-items-center">' +
-          '<div class="single_countdown">' +
-            '<h2 class="wedding_day">Wedding Day!</h2>' +
-          '</div>' +
+            '<div class="single_countdown">' +
+            '<h2 class="wedding_day">The Wedding has Passed </h2>' +
+            '</div>' +
         '</div>'
-      );
+        );
+    } else if (compareToday.getTime() === compareWedding.getTime()) {
+        // Exact wedding day
+        $('#clock').html(
+        '<div class="countdown_wrap d-flex justify-content-center align-items-center">' +
+            '<div class="single_countdown">' +
+            '<h2 class="wedding_day"> Wedding Day! 💍</h2>' +
+            '</div>' +
+        '</div>'
+        );
     } else {
-      // While countdown is running
-      $(this).html(event.strftime(
-        '<div class="countdown_wrap d-flex">' +
-          '<div class="single_countdown"><h3>%D</h3><span>Days</span></div>' +
-          '<div class="single_countdown"><h3>%H</h3><span>Hours</span></div>' +
-          '<div class="single_countdown"><h3>%M</h3><span>Minutes</span></div>' +
-          '<div class="single_countdown"><h3>%S</h3><span>Seconds</span></div>' +
-        '</div>'
-      ));
+        // Before wedding date → run countdown (use full date string, not normalized one)
+        $('#clock').countdown(weddingDateStr, function (event) {
+        $(this).html(event.strftime(
+            '<div class="countdown_wrap d-flex">' +
+            '<div class="single_countdown"><h3>%D</h3><span>Days</span></div>' +
+            '<div class="single_countdown"><h3>%H</h3><span>Hours</span></div>' +
+            '<div class="single_countdown"><h3>%M</h3><span>Minutes</span></div>' +
+            '<div class="single_countdown"><h3>%S</h3><span>Seconds</span></div>' +
+            '</div>'
+        ));
+        });
     }
-  });
-</script>
+    </script>
+
+
+
 
 
    <script>
